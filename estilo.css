@@ -1,0 +1,91 @@
+body{
+	background-color: whitesmoke;
+}
+#contenedor{
+	padding-top: 50px;
+}
+
+#contenedor h3{
+	text-align: center;
+}
+#informacion{
+	list-style: none;
+	padding-top: 20px;
+	text-align: right;
+}
+#informacion li{
+	font-size: 14px;
+}
+#informacion a{
+	text-decoration: none;
+	font-weight: bold;
+}
+#enlace{
+	text-decoration: none;
+	font-weight: bold;
+}
+#datos{
+	margin-top: 30px;
+}
+img{
+	padding-top: 10px;
+	padding-left: 5px;
+}
+hr{
+	width:80%; 
+	margin-left:10% !important; 
+	margin-right:10% !important;
+}
+#wizard{
+	width: 70%;
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 10px; 
+}
+
+#contenido{
+	text-align: left;
+	padding-left: 30px;
+	padding-right: 10px;
+}
+#contenido p{
+	text-align: left;
+	padding-right: 15px;
+	font-size: 15px;
+}
+#comentario{
+	padding: 20px;
+}
+
+#contenido hr{
+	width:98%; 
+	margin-left:0% !important; 
+	margin-right:0% !important;
+	margin-top: -5px;
+}
+
+#contenido h6{
+	font-weight: bold;
+}
+#frase{
+	margin-top: -15px;
+	font-style: italic;
+	text-align: center;
+	margin-bottom: -10px;
+}
+#lista{
+	list-style: none;
+}
+#lista li::before{
+	content:"\2014"; 
+	color:#000;
+	padding-right: 10px;
+}
+#derechos{
+	font-size: 12px;
+	padding: 10px;
+}
+#derechos a{
+	text-decoration: none;
+	font-weight: bold;
+}
