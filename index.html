@@ -16,7 +16,7 @@
   </head>
   <body>
 		<div class="container" id="contenedor">	      	        	
-		    <h3>HOJA DE VIDA</h3>
+		    <h3 id="inicio">HOJA DE VIDA</h3>
 		    <div class="wizard-container">
 		        <div class="card wizard-card shadow-sm bg-white rounded" id="wizard">
 		        	<div class="row shadow p-3 mb-5 bg-white rounded">
@@ -25,9 +25,9 @@
 			        			<div class="col-sm-4">	
 			        				<img src="fotografia.png" class="rounded mx-auto d-block" alt="Fotografía de perfil">
 			        			</div>        		
-			            		<div id="datos" class="col-sm-8">
+			            		<div class="col-sm-8" id="datos">			            		
 			            				<h4>Stalyn Alexander</h4>
-			            				<h2>Nogales Shagñay</h2>
+			            				<h2>Nogales Shagñay</h2>			            		
 			        			</div>  
 		        			</div>	
 		        		</div>
@@ -51,11 +51,20 @@
 		            		</ul>
 		        		</div>
 		            </div>
-		            <p id="frase">"La clave está en mirar el futuro habiendo aprendiendo del pasado"</p>
-		            <hr/>
-		            <div id="contenido">		            	
+
+		            <div class="botones text-center">
+			            <a class="btn btn-dark" href="#inicio" role="button">Inicio</a>
+			            <a class="btn btn-dark" href="#contactos" role="button">Contactos</a>
+			            <a class="btn btn-dark" href="#servicios" role="button">Servicios</a>
+		            </div>
+		            
+		            <div id="divfrase">
+		            	<p id="frase">"La clave está en mirar el futuro habiendo aprendiendo del pasado"</p>		         
+		        	    <hr/>            			            	
+		            </div>			            	            	
+		            <div id="contenido">	
 			            <p id="comentario">Soy una persona honesta, puntual pero sobretodo respetuoso ya que considero es la base fundamental de una buena comunicación, soy responsable y colaborador con tareas que se me asignen en alguna labor, basándome en ser eficiente, efectivo y dando lo mejor de mí, además me gusta estar en constante aprendizaje, tengo la facilidad de aprender nuevas tareas, siempre basándome en la ética profesional.</p>
-			            <h6>HABILIDADES E IDIOMAS</h6><hr>
+			            <h6>Habilidades e idiomas</h6><hr>
 			            
 			            	<table class="table table-borderless">
 			            	<tr>
@@ -71,7 +80,7 @@
 			            	</tr>
 			            	 	 	</table>
 			            
-			            <h6>EDUCACIÓN</h6><hr>
+			            <h6>Educación</h6><hr>
 			            
 			            	<table class="table table-borderless">
 			            		<tr>
@@ -84,7 +93,7 @@
 			            		</tr>
 			            	</table>
 			            
-			            <h6>EXPERIENCIA PROFESIONAL</h6><hr>
+			            <h6>Experiencia profesional</h6><hr>
 			            
 			            	<table class="table table-borderless">
 			            		<tr>
@@ -92,16 +101,66 @@
 			            			<td><b>Diario "La Prensa"</b><br><i>Prácticas pre-profesionales</i></td>
 			            		</tr>
 			            	</table>
-			            
-			            <h6>INTERESES</h6><hr>
-			            
+			         
+			            <h6>Intereses</h6><hr>
+			           
 			            	<ul id="lista">
 			            		<li><i>Viajar:</i> Europa (España, Francia, Italia,Noruega)</li>
 			            		<li><i>Deportes:</i> Fútbol</li>
 			            		<li><i>Hobbies:</i> Escribir, leer, fotografía</li>
 			            	</ul>
 			            
-		            </div>
+		            <h5 id="servicios">SERVICIOS</h5>
+
+					<h5 id="contactos">CONTACTOS</h5>
+					<form class="form-horizontal" method="post" onsubmit="return confirmation()">
+						                    <fieldset>
+						                        <legend class="text-center header">Contáctanos</legend>
+
+						                        <div class="form-group row">
+						                            <span class="col-md-2 text-right"><i class="fa fa-user"></i></span>
+						                            <div class="col-md-8">
+						                                <input id="fname" name="name" type="text" required placeholder="Nombres" class="form-control">
+						                            </div>
+						                        </div>
+						                        <div class="form-group row">
+						                            <span class="col-md-2 col-md-offset-2 text-right"><i class="fa fa-user bigicon"></i></span>
+						                            <div class="col-md-8">
+						                                <input id="lname" name="name" type="text" required placeholder="Apellidos" class="form-control">
+						                            </div>
+						                        </div>
+
+						                        <div class="form-group row">
+						                            <span class="col-md-2 col-md-offset-2 text-right"><i class="fa fa-envelope bigicon"></i></span>
+						                            <div class="col-md-8">
+						                                <input id="email" name="email" type="text" required placeholder="Correo electrónico" class="form-control">
+						                            </div>
+						                        </div>
+
+						                        <div class="form-group row">
+						                            <span class="col-md-2 col-md-offset-2 text-right"><i class="fa fa-phone-square bigicon"></i></span>
+						                            <div class="col-md-8">
+						                                <input id="phone" name="phone" type="text" required placeholder="Teléfono/Celular" class="form-control">
+						                            </div>
+						                        </div>
+
+						                        <div class="form-group row">
+						                            <span class="col-md-2 col-md-offset-2 text-right"><i class="fa fa-pencil bigicon"></i></span>
+						                            <div class="col-md-8">
+						                                <textarea class="form-control" id="message" required name="message" placeholder="Ingrese su mensaje para nosotros aquí. Nos pondremos en contacto con usted dentro de 2 días laborales" rows="7"></textarea>
+						                            </div>
+						                        </div>
+
+						                        <div class="form-group row">
+						                            <div class="col-md-12 text-center">
+						                                <button type="submit" class="btn btn-primary">Enviar información</button>
+						                            </div>
+						                        </div>
+						                    </fieldset>
+						                </form>
+
+						</div>
+
 		            	 <div class="footer">
 					        <div class="container text-center">
 					            <p id="derechos"><a href="mailto:stalynnsh@gmail.com">Stalyn Nogales &copy; </a>- 2019</p>
@@ -116,6 +175,18 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+	<script type="text/javascript">
+     function confirmation() 
+     {
+        if(confirm("¿Está seguro que desea enviar la información?"))
+	{
+	   return true;
+	}
+	else
+	{
+	   return false;
+	}
+     }
+    </script>
   </body>
 </html>
